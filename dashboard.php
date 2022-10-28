@@ -33,6 +33,7 @@
     <tr class="theader text-white">
       <th class="padding-head">No</th>
       <th class="padding-head">ID</th>
+      <th class="padding-head">Photo</th>
       <th class="padding-head">Name</th>
       <th class="padding-head">Username</th>
       <th class="padding-head">Password</th>
@@ -42,6 +43,7 @@
     <tr>
       <td class="border-1 padding-body"><?= $i ?></td>
       <td class="padding-body"><?= $user['id'] ?></td>
+      <td class="padding-body"><img src="img/<?= $user["photo"]?>" alt="" width="50px"></td>
       <td class="padding-body"><?= $user['name'] ?></td>
       <td class="padding-body"><?= $user['username'] ?></td>
       <td class="padding-body"><?= $user['password'] ?></td>

@@ -34,7 +34,13 @@ if ( !isset($_SESSION["login"])){
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="container-form">
-  <form method="POST">
+  <h1 class="h3 mb-3 text-black ">Add a photo</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <img src="img/<?=$user["photo"]?>" alt=""  width="120">
+    <input type="file" name="photo" class="form-control" placeholder="Add Picture...">
+    <input type="hidden" name="id" value="<?= $user["id"]?>">
+    <input type="hidden" name="samePhoto" value="<?= $user["photo"]?>">
+    <br>
     <input type="hidden" name="id" value="<?= $user["id"]?>">
     <div class="pt-25px">
       <label for="username" class="fs-3">Username</label>

@@ -26,7 +26,9 @@
 </head>
 <body>
 <div class="container-form">
-  <form method="POST">
+  <h1 class="h3 mb-3 text-black ">Add a photo</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="photo" class="form-control" placeholder="Add Picture..." required>
     <div class="pt-25px">
       <label for="name" class="fs-3">Name</label>
       <input type="text" class="input-1 mt-10px fs-2 p-form" id="name" name="name" placeholder="Name" />
