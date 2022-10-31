@@ -1,4 +1,5 @@
 <?php 
+    // cek session
     session_start();
     require 'functions.php';
 
